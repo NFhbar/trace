@@ -38,7 +38,7 @@ Future<Null> getMarketData() async {
             "&limit=" +
             limit.toString()),
         headers: {"Accept": "application/json"});
-
+    print(response.body);
     Map rawMarketListData = new JsonDecoder().convert(response.body)["data"];
     tempMarketListData.addAll(rawMarketListData.values);
   }
@@ -296,7 +296,7 @@ class TraceAppState extends State<TraceApp> {
       color: darkEnabled
           ? darkOLED ? darkThemeOLED.primaryColor : darkTheme.primaryColor
           : lightTheme.primaryColor,
-      title: "Trace",
+      title: "Credit Suisse",
       home: new Tabs(
         savePreferences: savePreferences,
         toggleTheme: toggleTheme,

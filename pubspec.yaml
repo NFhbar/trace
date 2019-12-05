@@ -1,5 +1,5 @@
-name: Trace
-description: Cryptocurrency portfolio and market explorer.
+name: CreditSuisse
+description: Smart Advisor for Credit Suisse
 
 dependencies:
   flutter:
